@@ -1,0 +1,77 @@
+/* HomePage.css */
+.HomePage {
+  font-family: Arial, sans-serif;
+  /* Add any other global styles for the entire page here */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Align content to the right */
+}
+
+.fixed-header {
+  background-color: skyblue;
+  color: black;
+  padding: 10px;
+  width: 100%; /* Ensure full width */
+}
+
+.Header-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.Header-buttons button {
+
+  border: none;
+  color: white;
+  border: 1px solid black;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  background-color: skyblue ;
+}
+
+.Header-buttons button:hover {
+ 
+  background-color: #e5e9ec;
+}
+
+.main-content {
+  padding: 20px;
+  width: 80%; /* Adjust content width as needed */
+}
+
+/* HomePage.css */
+.fixed-header {
+  font-family: Arial, sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  height: 100%; /* Adjust the width of the sidebar */
+  background-color: 5b7c99;
+  color: black;
+}
+
+.Header-buttons {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  
+}
+
+
+
+.main-content {
+  margin-left: 20%; /* Adjust to offset the sidebar width */
+  padding: 20px;
+}
+
+/* HomePage.css */
+
+.HomePage {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+
+ 
+}

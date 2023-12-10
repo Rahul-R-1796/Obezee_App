@@ -1,0 +1,84 @@
+/* Home.css */
+.Home {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  flex-wrap: wrap;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%; /* Ensure the heading takes full width */
+}
+
+.app-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%; 
+}
+
+.app-card {
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  background-color: #e5e9ec;
+  padding: 10px;
+  text-align: center;
+  width: calc(25% - 20px); 
+  box-sizing: border-box;
+}
+.app-card img {
+  width: 100%; /* Make the images responsive */
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .app-card {
+    width: calc(50% - 20px); 
+  }
+}
+
+
+@media screen and (min-width: 300px) and (max-width: 1200px) {
+  .app-list {
+    justify-content: flex-start;
+  }
+
+  .app-card {
+    width: calc(100% - 20px); 
+    max-width: 300px; 
+  }
+}
+.video-div{
+  cursor: pointer;
+}
+
+.Header-buttons button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Header-buttons button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Header-buttons button a,
+.Header-buttons button a:link,
+.Header-buttons button a:visited,
+.Header-buttons button a:hover,
+.Header-buttons button a:active,
+.Header-buttons button a:focus {
+  text-decoration: none;
+  color:black;
+}
+.main-content {
+  padding: 20px;
+}

@@ -1,0 +1,152 @@
+/* CRUDapp.css */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-card img {
+  width: 100%; /* Make the images responsive */
+  max-width: 100%; /* Ensure images don't exceed their container */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px;
+}
+
+/* Form styles */
+.Form_Container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.input-data {
+  position: relative;
+}
+
+.input-data input {
+  border-radius: 10px;
+  width: 100%;
+ 
+  padding: 10px;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  font-size: 16px;
+}
+
+.input-data input:focus ~ .underline {
+  transform: scaleX(1);
+}
+
+.input-data label {
+  position: absolute;
+  bottom: 5px;
+  left:20px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+.input-data input:focus ~ label,
+.input-data input:valid ~ label {
+  transform: translateY(-25px) scale(0.8);
+  color:skyblue;
+}
+
+.underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 1px;
+  background-color: skyblue;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.submit-btn {
+  text-align: center;
+}
+
+
+/* App Grid styles */
+.app-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.app-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: calc(25% - 20px);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.app-card h3 {
+  margin-top: 0;
+}
+
+.app-card img {
+  width: 220px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.app-card span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.app-card a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.app-card a:hover {
+  color: #555;
+}
+
+
+
+.submit-btn button,
+.app-card button {
+  padding: 10px 20px ;
+  margin: 10px;
+  border: solid 1px black;
+  background-color: skyblue;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  outline: none;
+}
+
+.submit-btn button:hover,
+.app-card button:hover {
+  background-color: darkblue;
+  color:aliceblue
+}
+
